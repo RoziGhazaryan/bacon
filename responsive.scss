@@ -1,0 +1,227 @@
+/* Extra media for better UI */
+@import "assets/style/_normalize.scss";
+@import "assets/style/_mixins.scss";
+@import "assets/style/_flexbox.scss";
+
+@media (max-width: 1819.98px) {
+	/* =============================-static-media-start-============================= */
+	.section-title {
+		font-size: 56px;
+	}
+	/* =============================-static-media-end-============================= */
+
+	/* =============================-header-media-start-============================= */
+	header .header-logo {
+		@include wh(120px, 120px);
+	}
+	/* =============================-header-media-start-============================= */
+
+	/* =============================-section-work-in-media-start-============================= */
+	.work-in {
+		height: 920px;
+
+		&-cnt {
+			padding-bottom: 72px;
+
+			&__title {
+				font-size: 65px;
+			}
+
+			&__info--lang {
+				.work-in-cnt__info--block {
+					h3 {
+						font-size: 98px;
+					}
+
+					&-text {
+						.icon {
+							svg {
+								@include wh(30px, 30px);
+							}
+						}
+						span {
+							font-size: 15px;
+							line-height: 20px;
+							margin-left: 8px;
+						}
+					}
+				}
+			}
+
+			&__lang {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	/* =============================-section-work-in-media-end-============================= */
+
+	/* =============================-section-mission-media-start-============================= */
+	.mission-cnt {
+		padding-top: 80px;
+	}
+	/* =============================-section-mission-media-end-============================= */
+	/* =============================-section-team-media-start-============================= */
+	.team {
+		margin-top: 0;
+
+		&-cnt {
+			padding-top: 40px;
+		}
+	}
+	/* =============================-section-team-media-end-============================= */
+	/* =============================-section-benefits-media-start-============================= */
+	.benefits-cnt {
+		padding: 72px 0;
+
+		&__benefits {
+			margin: -16px;
+
+			&-block {
+				padding: 16px;
+
+				&__cnt {
+					min-height: 414px;
+					padding: 40px 24px;
+
+					.icon {
+						margin-bottom: 50px;
+					}
+
+					.title {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+	/* =============================-section-benefits-media-end-============================= */
+	/* =============================-section-positions-media-start-============================= */
+	.positions-cnt {
+		&__slider--image {
+			.positions-cnt__slider--arrows {
+				.positions-cnt__slider {
+					margin-bottom: 32px;
+
+					&--blocks_cnt--block {
+						h5 {
+							font-size: 17px;
+						}
+					}
+				}
+			}
+
+			.positions-cnt__image {
+				width: 30%;
+			}
+		}
+	}
+	/* =============================-section-positions-media-end-============================= */
+
+	/* =============================-section-gallery-media-start-============================= */
+	.gallery-cnt {
+		padding: 100px 0;
+
+		&__slider {
+			margin: 0 -15px;
+		}
+	}
+	/* =============================-section-gallery-media-end-============================= */
+
+	.faq {
+		&-image {
+			height: 900px;
+		}
+
+		&-cnt {
+			padding-top: 60px;
+
+			&__answers-blocks {
+				width: 31%;
+
+				.faq-cnt__answers-block--text .title {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1399.98px) {
+	/* =============================-static-media-start-============================= */
+	.section-title {
+		font-size: 50px;
+	}
+	/* =============================-static-media-end-============================= */
+
+	/* =============================--section-work-in-media-start-============================= */
+	.work-in {
+		height: 700px;
+
+		&-cnt {
+			&__title {
+				margin-bottom: 32px;
+			}
+
+			&__info--lang .work-in-cnt__info--block {
+				h3 {
+					font-size: 86px;
+					margin-bottom: 12px;
+				}
+
+				&-text {
+					span {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	/* =============================--section-work-in-media-start-============================= */
+
+	/* =============================-section-mission-media-start-============================= */
+	.mission-cnt {
+		padding-top: 50px;
+
+		&__text-description {
+			font-size: 16px;
+		}
+
+		&__slider--block_cnt {
+			height: 530px;
+
+			&--text span {
+				font-size: 16px;
+			}
+		}
+	}
+	/* =============================-section-mission-media-end-============================= */
+
+	/* =============================-section-team-media-start-============================= */
+	.team-cnt {
+		padding-top: 20px;
+	}
+	/* =============================-section-team-media-end-============================= */
+
+	/* =============================-section-benefits-media-start-============================= */
+	.benefits-cnt {
+		padding: 50px 0;
+	}
+	/* =============================-section-benefits-media-end-============================= */
+
+}
+
+@media (max-width: 1199.98px) {
+	/* =============================-header-media-start-============================= */
+	/* =============================-header-media-end-============================= */
+}
+
+@media (max-width: 991.98px) {
+	/* =============================-header-media-start-============================= */
+	/* =============================-header-media-start-============================= */
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
