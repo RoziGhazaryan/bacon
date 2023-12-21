@@ -441,18 +441,20 @@ header .header-menu__item a:hover {
   display: flex;
   align-items: center;
 }
-.work-in-cnt__lang a {
+.work-in-cnt__lang span {
+  cursor: pointer;
   color: #c3c3c3;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
+  line-height: 20px;
   text-transform: uppercase;
   transition: 0.3s;
 }
-.work-in-cnt__lang a:hover {
+.work-in-cnt__lang span:hover {
   color: #ffffff;
 }
-.work-in-cnt__lang a + a {
+.work-in-cnt__lang span + span {
   margin-left: 24px;
 }
 
