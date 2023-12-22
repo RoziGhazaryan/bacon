@@ -9,13 +9,11 @@
 		font-size: 56px;
 	}
 	/* =============================-static-media-end-============================= */
-
 	/* =============================-header-media-start-============================= */
 	header .header-logo {
-		@include wh(120px, 120px);
+		width: 120px;
 	}
 	/* =============================-header-media-start-============================= */
-
 	/* =============================-section-work-in-media-start-============================= */
 	.work-in {
 		height: 920px;
@@ -36,9 +34,10 @@
 					&-text {
 						.icon {
 							svg {
-								@include wh(30px, 30px);
+								@include wh(33px, 33px);
 							}
 						}
+
 						span {
 							font-size: 15px;
 							line-height: 20px;
@@ -54,7 +53,6 @@
 		}
 	}
 	/* =============================-section-work-in-media-end-============================= */
-
 	/* =============================-section-mission-media-start-============================= */
 	.mission-cnt {
 		padding-top: 80px;
@@ -80,7 +78,7 @@
 				padding: 16px;
 
 				&__cnt {
-					min-height: 414px;
+					height: 414px;
 					padding: 40px 24px;
 
 					.icon {
@@ -116,7 +114,6 @@
 		}
 	}
 	/* =============================-section-positions-media-end-============================= */
-
 	/* =============================-section-gallery-media-start-============================= */
 	.gallery-cnt {
 		padding: 100px 0;
@@ -126,14 +123,14 @@
 		}
 	}
 	/* =============================-section-gallery-media-end-============================= */
-
+	/* =============================-section-faq-media-start-============================= */
 	.faq {
 		&-image {
 			height: 900px;
 		}
 
 		&-cnt {
-			padding-top: 60px;
+			padding-top: 80px;
 
 			&__answers-blocks {
 				width: 31%;
@@ -144,6 +141,7 @@
 			}
 		}
 	}
+	/* =============================-section-faq-media-end-============================= */
 }
 
 @media (max-width: 1399.98px) {
@@ -151,8 +149,11 @@
 	.section-title {
 		font-size: 50px;
 	}
-	/* =============================-static-media-end-============================= */
 
+	.btn {
+		width: 160px;
+	}
+	/* =============================-static-media-end-============================= */
 	/* =============================--section-work-in-media-start-============================= */
 	.work-in {
 		height: 700px;
@@ -177,10 +178,9 @@
 		}
 	}
 	/* =============================--section-work-in-media-start-============================= */
-
 	/* =============================-section-mission-media-start-============================= */
 	.mission-cnt {
-		padding-top: 50px;
+		padding-top: 60px;
 
 		&__text-description {
 			font-size: 16px;
@@ -195,33 +195,503 @@
 		}
 	}
 	/* =============================-section-mission-media-end-============================= */
-
 	/* =============================-section-team-media-start-============================= */
 	.team-cnt {
 		padding-top: 20px;
 	}
 	/* =============================-section-team-media-end-============================= */
-
 	/* =============================-section-benefits-media-start-============================= */
 	.benefits-cnt {
-		padding: 50px 0;
+		padding: 62px 0;
+
+		&__benefits {
+			justify-content: flex-start;
+
+			&-block {
+				width: 33.3333%;
+
+				&__cnt {
+					height: 360px;
+				}
+			}
+		}
 	}
 	/* =============================-section-benefits-media-end-============================= */
+	/* =============================-section-positions-media-start-============================= */
+	.positions-cnt {
+		&__title {
+			margin-bottom: 32px;
+		}
 
+		&__slider--image {
+			.positions-cnt__slider--arrows {
+				.positions-cnt__slider--blocks_cnt--block {
+					height: 210px;
+				}
+			}
+		}
+	}
+	/* =============================-section-positions-media-end-============================= */
+	/* =============================-section-gallery-media-start-============================= */
+	.gallery-cnt {
+		padding: 56px 0;
+	}
+	/* =============================-section-gallery-media-end-============================= */
+	/* =============================-section-faq-media-start-============================= */
+	.faq-image {
+		height: 750px;
+		margin-left: 32px;
+	}
+	/* =============================-section-faq-media-end-============================= */
+	/* =============================-footer-media-start-============================= */
+	footer .footer-cnt {
+		&__info-block {
+			h5 {
+				font-size: 14px;
+			}
+
+			a {
+				font-size: 15px;
+			}
+		}
+
+		&__social {
+			svg {
+				width: 32px;
+
+				+ svg {
+					margin-top: 24px;
+				}
+			}
+		}
+	}
+	/* =============================-footer-media-end-============================= */
 }
 
 @media (max-width: 1199.98px) {
-	/* =============================-header-media-start-============================= */
-	/* =============================-header-media-end-============================= */
+	/* =============================-section-work-in-media-start-============================= */
+	.work-in-cnt {
+		padding-bottom: 48px;
+
+		&__info--lang {
+			flex-direction: column;
+			align-items: center;
+
+			.work-in-cnt__info {
+				width: 100%;
+
+				&--block h3 {
+					font-size: 64px;
+					margin-bottom: 12px;
+				}
+			}
+
+			.work-in-cnt__lang {
+				padding-top: 24px;
+				padding-bottom: 0;
+			}
+		}
+	}
+	/* =============================-section-work-in-media-end-============================= */
+	/* =============================-section-positions-media-start-============================= */
+	.positions-cnt__slider--image {
+		.positions-cnt__slider--arrows {
+			width: 100%;
+
+			.positions-cnt__slider {
+				margin: -18px -15px 54px;
+			}
+		}
+
+		.positions-cnt__image {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	/* =============================-section-positions-media-end-============================= */
+	/* =============================-section-faq-media-start-============================= */
+	.faq {
+		align-items: center;
+		flex-direction: column;
+
+		&-cnt__answers {
+			padding: 32px;
+		}
+
+		&-image {
+			padding-left: 0;
+			margin-left: 0;
+		}
+	}
+	/* =============================-section-faq-media-end-============================= */
 }
 
 @media (max-width: 991.98px) {
+	/* =============================-static-media-start-============================= */
+	.mission-cnt__text,
+	.team-cnt__text,
+	.benefits-cnt__text,
+	.gallery-cnt__text {
+		text-align: center;
+		width: 100%;
+	}
+	/* =============================-static-media-end-============================= */
 	/* =============================-header-media-start-============================= */
+	header .header-menu__item span {
+		font-size: 17px;
+	}
 	/* =============================-header-media-start-============================= */
-}
+	/* =============================-section-work-in-media-start-============================= */
+	.work-in-cnt {
+		&__title {
+			margin-bottom: 20px;
+		}
 
-@media (max-width: 575.98px) {
+		&__info--lang {
+			align-items: flex-end;
+
+			.work-in-cnt__info {
+				&--block {
+					width: 25%;
+
+					h3 {
+						font-size: 56px;
+					}
+				}
+			}
+		}
+	}
+	/* =============================-section-work-in-media-end-============================= */
+	/* =============================-section-guide-media-start-============================= */
+	.guide {
+		margin-top: 70px;
+
+		&-cnt {
+			&__text {
+				&-title {
+					color: $staticColor;
+					font-size: 20px;
+					margin-bottom: 40px;
+				}
+			}
+
+			&__steps {
+				justify-content: center;
+
+				&-background {
+					display: none;
+
+					&_mobile {
+						width: 80%;
+						max-width: 500px;
+						display: block;
+					}
+				}
+
+				&-blocks {
+					top: 0;
+					width: 80%;
+					max-width: 500px;
+					flex-direction: column;
+					align-items: center;
+
+					&__item {
+						width: 100%;
+						padding: 0;
+						padding-top: 93%;
+						position: relative;
+
+						svg {
+							position: absolute;
+							top: 28%;
+							height: auto;
+							width: 20%;
+							flex: 0 0 25%;
+							max-width: unset;
+						}
+
+						&-text {
+							position: absolute;
+							top: 60%;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* =============================-section-guide-media-end-============================= */
+	/* =============================-section-gallery-media-start-============================= */
+	.gallery-cnt__slider--block {
+		padding: 20px 14px 48px;
+	}
+
+	.positions-cnt__slider--image
+		.positions-cnt__slider--arrows
+		.positions-cnt__slider {
+		margin: -18px -10px 54px;
+	}
+
+	/* =============================-section-gallery-media-end-============================= */
+	/* =============================-section-faq-media-start-============================= */
+	.faq {
+		&-cnt__answers {
+			margin-top: 48px;
+		}
+
+		&-image {
+			width: 100%;
+		}
+	}
+	/* =============================-section-faq-media-end-============================= */
 }
 
 @media (max-width: 767.98px) {
+	/* =============================-static-media-start-============================= */
+	.section-title {
+		font-size: 20px;
+		text-wrap: nowrap;
+	}
+
+	.slider-arrows {
+		display: none;
+	}
+	/* =============================-static-media-end-============================= */
+	/* =============================-header-media-start-============================= */
+	header {
+		.header-logo {
+			width: 81px;
+		}
+
+		.header-menu__item span {
+			font-size: 20px;
+		}
+
+		.menu {
+			.menu-desktop {
+				display: none;
+			}
+
+			.menu-mobile {
+				display: block;
+			}
+		}
+	}
+	/* =============================-header-media-end-============================= */
+	/* =============================-section-work-in-media-start-============================= */
+	.work-in {
+		height: auto;
+		background-size: 185% auto;
+		background-position: 68% -2%;
+		background-color: #000000;
+
+		.shadow {
+			position: absolute;
+			bottom: unset;
+			top: 28%;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 24%);
+		}
+
+		&-cnt {
+			padding-top: 111%;
+
+			&__lang {
+				display: none;
+			}
+
+			&__info--lang {
+				.work-in-cnt__info--block {
+					width: 100%;
+
+					h3 {
+						font-size: 90px;
+						margin-bottom: 22px;
+					}
+
+					&-text {
+						span {
+							font-size: 16px;
+							max-width: 200px;
+						}
+					}
+
+					&:not(:first-child) {
+						margin-top: 42px;
+					}
+				}
+			}
+
+			&__title {
+				font-size: 20px;
+				line-height: 22px;
+			}
+		}
+	}
+	/* =============================-section-work-in-media-end-============================= */
+	/* =============================-section-mission-media-start-============================= */
+	.mission-cnt__text {
+		text-align: start;
+
+		&-title {
+			margin-bottom: 12px;
+		}
+
+		&-description {
+			font-size: 14px;
+			line-height: 28px;
+		}
+	}
+	/* =============================-section-mission-media-end-============================= */
+	/* =============================-section-team-media-start-============================= */
+	.team-cnt__text {
+		&-title {
+			margin-bottom: 12px;
+		}
+
+		&-description {
+			font-size: 14px;
+			line-height: 28px;
+		}
+	}
+	/* =============================-section-team-media-end-============================= */
+	/* =============================-section-benefits-media-start-============================= */
+	.benefits-cnt {
+		&__benefits-block {
+			width: 50%;
+		}
+
+		&__text {
+			&-title {
+				margin-bottom: 12px;
+			}
+
+			&-description {
+				font-size: 14px;
+				line-height: 28px;
+			}
+		}
+	}
+	/* =============================-section-benefits-media-end-============================= */
+	/* =============================-section-gallery-media-start-============================= */
+	.gallery-cnt {
+		&__text-title {
+			margin-bottom: 12px;
+		}
+
+		&__slider--block {
+			padding: 20px 34px 48px;
+		}
+	}
+	/* =============================-section-gallery-media-end-============================= */
+	/* =============================-section-faq-media-start-============================= */
+	.faq {
+		&-image {
+			height: auto;
+		}
+
+		&-cnt__answers {
+			&-blocks {
+				width: 100%;
+
+				&:not(:first-child) {
+					margin-top: 36px;
+				}
+			}
+
+			&-block {
+				&:not(:first-child) {
+					margin-top: 36px;
+				}
+			}
+		}
+	}
+	/* =============================-section-faq-media-end-============================= */
+
+	footer .footer-cnt {
+		padding: 60px 0 100px;
+
+		&__info {
+			width: 100%;
+			padding-right: 5px;
+
+			&-block {
+				width: 100%;
+
+				h5 {
+					margin-bottom: 22px;
+				}
+
+				&:not(:first-child) {
+					margin-top: 60px;
+					margin-left: 0;
+				}
+
+				a + a {
+					margin-top: 22px;
+				}
+			}
+		}
+
+		&__social {
+			width: 100%;
+			margin-top: 60px;
+			flex-direction: row;
+			justify-content: space-between;
+
+			svg + svg {
+				margin-top: 0;
+			}
+		}
+
+		.copyright {
+			margin-top: 62px;
+
+			span {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	/* =============================-section-work-in-media-start-============================= */
+	.work-in .shadow {
+		top: 14%;
+	}
+	/* =============================-section-work-in-media-end-============================= */
+	/* =============================-section-benefits-media-start-============================= */
+	.benefits-cnt {
+		&__benefits-block {
+			width: 100%;
+		}
+	}
+	/* =============================-section-benefits-media-end-============================= */
+	/* =============================-section-positions-media-start-============================= */
+	.positions-cnt__slider--image
+		.positions-cnt__slider--arrows
+		.positions-cnt__slider--blocks_cnt--block {
+		height: auto;
+
+		h5 {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.apply-block {
+			margin-top: 12px;
+			align-items: flex-start;
+			flex-direction: column;
+
+			&__btn {
+				width: 100%;
+				margin-top: 26px;
+
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+	/* =============================-section-positions-media-end-============================= */
 }

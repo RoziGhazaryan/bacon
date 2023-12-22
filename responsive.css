@@ -15,7 +15,7 @@
   font-family: "Roboto";
   src: url("./assets/font/roboto/Roboto-Bold.ttf");
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
 }
 @font-face {
   font-family: "Roboto";
@@ -185,7 +185,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "Mardoto";
   background-color: #ffffff;
 }
 
@@ -253,7 +253,6 @@ body {
   /* =============================-header-media-start-============================= */
   header .header-logo {
     width: 120px;
-    height: 120px;
   }
   /* =============================-header-media-start-============================= */
   /* =============================-section-work-in-media-start-============================= */
@@ -270,8 +269,8 @@ body {
     font-size: 98px;
   }
   .work-in-cnt__info--lang .work-in-cnt__info--block-text .icon svg {
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
   }
   .work-in-cnt__info--lang .work-in-cnt__info--block-text span {
     font-size: 15px;
@@ -306,7 +305,7 @@ body {
     padding: 16px;
   }
   .benefits-cnt__benefits-block__cnt {
-    min-height: 414px;
+    height: 414px;
     padding: 40px 24px;
   }
   .benefits-cnt__benefits-block__cnt .icon {
@@ -335,11 +334,12 @@ body {
     margin: 0 -15px;
   }
   /* =============================-section-gallery-media-end-============================= */
+  /* =============================-section-faq-media-start-============================= */
   .faq-image {
     height: 900px;
   }
   .faq-cnt {
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .faq-cnt__answers-blocks {
     width: 31%;
@@ -347,11 +347,15 @@ body {
   .faq-cnt__answers-blocks .faq-cnt__answers-block--text .title {
     font-size: 16px;
   }
+  /* =============================-section-faq-media-end-============================= */
 }
 @media (max-width: 1399.98px) {
   /* =============================-static-media-start-============================= */
   .section-title {
     font-size: 50px;
+  }
+  .btn {
+    width: 160px;
   }
   /* =============================-static-media-end-============================= */
   /* =============================--section-work-in-media-start-============================= */
@@ -371,7 +375,7 @@ body {
   /* =============================--section-work-in-media-start-============================= */
   /* =============================-section-mission-media-start-============================= */
   .mission-cnt {
-    padding-top: 50px;
+    padding-top: 60px;
   }
   .mission-cnt__text-description {
     font-size: 16px;
@@ -390,15 +394,376 @@ body {
   /* =============================-section-team-media-end-============================= */
   /* =============================-section-benefits-media-start-============================= */
   .benefits-cnt {
-    padding: 50px 0;
+    padding: 62px 0;
+  }
+  .benefits-cnt__benefits {
+    justify-content: flex-start;
+  }
+  .benefits-cnt__benefits-block {
+    width: 33.3333%;
+  }
+  .benefits-cnt__benefits-block__cnt {
+    height: 360px;
   }
   /* =============================-section-benefits-media-end-============================= */
+  /* =============================-section-positions-media-start-============================= */
+  .positions-cnt__title {
+    margin-bottom: 32px;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block {
+    height: 210px;
+  }
+  /* =============================-section-positions-media-end-============================= */
+  /* =============================-section-gallery-media-start-============================= */
+  .gallery-cnt {
+    padding: 56px 0;
+  }
+  /* =============================-section-gallery-media-end-============================= */
+  /* =============================-section-faq-media-start-============================= */
+  .faq-image {
+    height: 750px;
+    margin-left: 32px;
+  }
+  /* =============================-section-faq-media-end-============================= */
+  /* =============================-footer-media-start-============================= */
+  footer .footer-cnt__info-block h5 {
+    font-size: 14px;
+  }
+  footer .footer-cnt__info-block a {
+    font-size: 15px;
+  }
+  footer .footer-cnt__social svg {
+    width: 32px;
+  }
+  footer .footer-cnt__social svg + svg {
+    margin-top: 24px;
+  }
+  /* =============================-footer-media-end-============================= */
 }
 @media (max-width: 1199.98px) {
-  /* =============================-header-media-start-============================= */
-  /* =============================-header-media-end-============================= */
+  /* =============================-section-work-in-media-start-============================= */
+  .work-in-cnt {
+    padding-bottom: 48px;
+  }
+  .work-in-cnt__info--lang {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info {
+    width: 100%;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block h3 {
+    font-size: 64px;
+    margin-bottom: 12px;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__lang {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+  /* =============================-section-work-in-media-end-============================= */
+  /* =============================-section-positions-media-start-============================= */
+  .positions-cnt__slider--image .positions-cnt__slider--arrows {
+    width: 100%;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider {
+    margin: -18px -15px 54px;
+  }
+  .positions-cnt__slider--image .positions-cnt__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* =============================-section-positions-media-end-============================= */
+  /* =============================-section-faq-media-start-============================= */
+  .faq {
+    align-items: center;
+    flex-direction: column;
+  }
+  .faq-cnt__answers {
+    padding: 32px;
+  }
+  .faq-image {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  /* =============================-section-faq-media-end-============================= */
 }
 @media (max-width: 991.98px) {
+  /* =============================-static-media-start-============================= */
+  .mission-cnt__text,
+  .team-cnt__text,
+  .benefits-cnt__text,
+  .gallery-cnt__text {
+    text-align: center;
+    width: 100%;
+  }
+  /* =============================-static-media-end-============================= */
   /* =============================-header-media-start-============================= */
+  header .header-menu__item span {
+    font-size: 17px;
+  }
   /* =============================-header-media-start-============================= */
+  /* =============================-section-work-in-media-start-============================= */
+  .work-in-cnt__title {
+    margin-bottom: 20px;
+  }
+  .work-in-cnt__info--lang {
+    align-items: flex-end;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block {
+    width: 25%;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block h3 {
+    font-size: 56px;
+  }
+  /* =============================-section-work-in-media-end-============================= */
+  /* =============================-section-guide-media-start-============================= */
+  .guide {
+    margin-top: 70px;
+  }
+  .guide-cnt__text-title {
+    color: #4D4A46;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .guide-cnt__steps {
+    justify-content: center;
+  }
+  .guide-cnt__steps-background {
+    display: none;
+  }
+  .guide-cnt__steps-background_mobile {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+  }
+  .guide-cnt__steps-blocks {
+    top: 0;
+    width: 80%;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .guide-cnt__steps-blocks__item {
+    width: 100%;
+    padding: 0;
+    padding-top: 93%;
+    position: relative;
+  }
+  .guide-cnt__steps-blocks__item svg {
+    position: absolute;
+    top: 28%;
+    height: auto;
+    width: 20%;
+    flex: 0 0 25%;
+    max-width: unset;
+  }
+  .guide-cnt__steps-blocks__item-text {
+    position: absolute;
+    top: 60%;
+    font-size: 14px;
+  }
+  /* =============================-section-guide-media-end-============================= */
+  /* =============================-section-gallery-media-start-============================= */
+  .gallery-cnt__slider--block {
+    padding: 20px 14px 48px;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider {
+    margin: -18px -10px 54px;
+  }
+  /* =============================-section-gallery-media-end-============================= */
+  /* =============================-section-faq-media-start-============================= */
+  .faq-cnt__answers {
+    margin-top: 48px;
+  }
+  .faq-image {
+    width: 100%;
+  }
+  /* =============================-section-faq-media-end-============================= */
+}
+@media (max-width: 767.98px) {
+  /* =============================-static-media-start-============================= */
+  .section-title {
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+  .slider-arrows {
+    display: none;
+  }
+  /* =============================-static-media-end-============================= */
+  /* =============================-header-media-start-============================= */
+  header .header-logo {
+    width: 81px;
+  }
+  header .header-menu__item span {
+    font-size: 20px;
+  }
+  header .menu .menu-desktop {
+    display: none;
+  }
+  header .menu .menu-mobile {
+    display: block;
+  }
+  /* =============================-header-media-end-============================= */
+  /* =============================-section-work-in-media-start-============================= */
+  .work-in {
+    height: auto;
+    background-size: 185% auto;
+    background-position: 68% -2%;
+    background-color: #000000;
+  }
+  .work-in .shadow {
+    position: absolute;
+    bottom: unset;
+    top: 28%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 24%);
+  }
+  .work-in-cnt {
+    padding-top: 111%;
+  }
+  .work-in-cnt__lang {
+    display: none;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block {
+    width: 100%;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block h3 {
+    font-size: 90px;
+    margin-bottom: 22px;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block-text span {
+    font-size: 16px;
+    max-width: 200px;
+  }
+  .work-in-cnt__info--lang .work-in-cnt__info--block:not(:first-child) {
+    margin-top: 42px;
+  }
+  .work-in-cnt__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  /* =============================-section-work-in-media-end-============================= */
+  /* =============================-section-mission-media-start-============================= */
+  .mission-cnt__text {
+    text-align: start;
+  }
+  .mission-cnt__text-title {
+    margin-bottom: 12px;
+  }
+  .mission-cnt__text-description {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  /* =============================-section-mission-media-end-============================= */
+  /* =============================-section-team-media-start-============================= */
+  .team-cnt__text-title {
+    margin-bottom: 12px;
+  }
+  .team-cnt__text-description {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  /* =============================-section-team-media-end-============================= */
+  /* =============================-section-benefits-media-start-============================= */
+  .benefits-cnt__benefits-block {
+    width: 50%;
+  }
+  .benefits-cnt__text-title {
+    margin-bottom: 12px;
+  }
+  .benefits-cnt__text-description {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  /* =============================-section-benefits-media-end-============================= */
+  /* =============================-section-gallery-media-start-============================= */
+  .gallery-cnt__text-title {
+    margin-bottom: 12px;
+  }
+  .gallery-cnt__slider--block {
+    padding: 20px 34px 48px;
+  }
+  /* =============================-section-gallery-media-end-============================= */
+  /* =============================-section-faq-media-start-============================= */
+  .faq-image {
+    height: auto;
+  }
+  .faq-cnt__answers-blocks {
+    width: 100%;
+  }
+  .faq-cnt__answers-blocks:not(:first-child) {
+    margin-top: 36px;
+  }
+  .faq-cnt__answers-block:not(:first-child) {
+    margin-top: 36px;
+  }
+  /* =============================-section-faq-media-end-============================= */
+  footer .footer-cnt {
+    padding: 60px 0 100px;
+  }
+  footer .footer-cnt__info {
+    width: 100%;
+    padding-right: 5px;
+  }
+  footer .footer-cnt__info-block {
+    width: 100%;
+  }
+  footer .footer-cnt__info-block h5 {
+    margin-bottom: 22px;
+  }
+  footer .footer-cnt__info-block:not(:first-child) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  footer .footer-cnt__info-block a + a {
+    margin-top: 22px;
+  }
+  footer .footer-cnt__social {
+    width: 100%;
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .footer-cnt__social svg + svg {
+    margin-top: 0;
+  }
+  footer .footer-cnt .copyright {
+    margin-top: 62px;
+  }
+  footer .footer-cnt .copyright span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  /* =============================-section-work-in-media-start-============================= */
+  .work-in .shadow {
+    top: 14%;
+  }
+  /* =============================-section-work-in-media-end-============================= */
+  /* =============================-section-benefits-media-start-============================= */
+  .benefits-cnt__benefits-block {
+    width: 100%;
+  }
+  /* =============================-section-benefits-media-end-============================= */
+  /* =============================-section-positions-media-start-============================= */
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block {
+    height: auto;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block .apply-block {
+    margin-top: 12px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block .apply-block__btn {
+    width: 100%;
+    margin-top: 26px;
+  }
+  .positions-cnt__slider--image .positions-cnt__slider--arrows .positions-cnt__slider--blocks_cnt--block .apply-block__btn .btn {
+    width: 100%;
+  }
+  /* =============================-section-positions-media-end-============================= */
 }/*# sourceMappingURL=responsive.css.map */
